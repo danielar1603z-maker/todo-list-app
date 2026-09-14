@@ -32,4 +32,4 @@ Abre `index.html` en tu navegador para probarla — no necesita instalación ni 
 
 ## Autora
 
-Daniela Rúa Zabala — [tu-linkedin] · [tu-github]
+Daniela Rúa Zabala
