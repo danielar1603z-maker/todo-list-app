@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas | Daniela Rúa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <header class="app-header">
+      <h1>Mis tareas</h1>
+      <p class="subtitle" id="dateToday"></p>
+    </header>
+
+    <form id="taskForm" class="task-form">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="¿Qué necesitas hacer hoy?"
+        autocomplete="off"
+        required
+      >
+      <button type="submit" aria-label="Agregar tarea">Agregar</button>
+    </form>
+
+    <div class="filters" role="tablist" aria-label="Filtrar tareas">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todas</button>
+      <button class="filter-btn" data-filter="active" role="tab" aria-selected="false">Pendientes</button>
+      <button class="filter-btn" data-filter="completed" role="tab" aria-selected="false">Completadas</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <p id="emptyState" class="empty-state">No tienes tareas todavía. ¡Agrega la primera! ✨</p>
+
+    <footer class="app-footer">
+      <span id="taskCount">0 tareas pendientes</span>
+      <button id="clearCompleted" class="clear-btn">Borrar completadas</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
